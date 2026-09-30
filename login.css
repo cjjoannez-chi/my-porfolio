@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    
+
+    /* COLORS INSPIRED BY YOUR FLOWER IMAGE */
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #d7b9a5 0%,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 80% 30%,
+            #a7b987 0%,
+            transparent 40%
+        ),
+
+        linear-gradient(
+            135deg,
+            #d8b99f,
+            #829777,
+            #c99a9b
+        );
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card {
+
+    width: 325px;
+
+    min-height: 415px;
+
+    padding: 28px 40px;
+
+    border-radius: 18px;
+
+    /* GLASS EFFECT */
+
+    background: rgba(63, 82, 63, 0.48);
+
+    border: 1px solid rgba(246, 226, 213, 0.35);
+
+    box-shadow:
+        0 20px 50px rgba(44, 57, 42, 0.30);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    color: #f8eee8;
+
+}
+
+
+/* =========================
+   TOP ICON
+========================= */
+
+.sun-icon {
+
+    width: 28px;
+
+    height: 28px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    color: #e9b5a8;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+
+    text-align: center;
+
+    font-size: 29px;
+
+    font-weight: 400;
+
+    margin-bottom: 6px;
+
+    color: #fff2ed;
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle {
+
+    text-align: center;
+
+    font-size: 8px;
+
+    line-height: 1.5;
+
+    color: #eadbd3;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+.login-card > label {
+
+    display: block;
+
+    font-size: 7px;
+
+    margin-bottom: 5px;
+
+    color: #eadbd3;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input[type="email"] {
+
+    width: 100%;
+
+    height: 30px;
+
+    padding: 0 12px;
+
+    margin-bottom: 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(239, 196, 188, 0.45);
+
+    outline: none;
+
+    background: rgba(68, 89, 68, 0.25);
+
+    color: #fff;
+
+    font-size: 8px;
+}
+
+
+input::placeholder {
+
+    color: #d9ccc5;
+}
+
+
+/* =========================
+   PASSWORD
+========================= */
+
+.password-box {
+
+    position: relative;
+
+    width: 100%;
+}
+
+
+.password-box input {
+
+    width: 100%;
+
+    height: 30px;
+
+    padding: 0 35px 0 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(239, 196, 188, 0.45);
+
+    outline: none;
+
+    background: rgba(68, 89, 68, 0.25);
+
+    color: #fff;
+
+    font-size: 9px;
+}
+
+
+.eye {
+
+    position: absolute;
+
+    right: 11px;
+
+    top: 8px;
+
+    font-size: 11px;
+
+    color: #d9c3bb;
+
+}
+
+
+/* =========================
+   OPTIONS
+========================= */
+
+.options {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 9px;
+
+    margin-bottom: 14px;
+
+    font-size: 7px;
+}
+
+
+.remember {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    color: #e9ded8;
+}
+
+
+.remember input {
+
+    width: 10px;
+
+    height: 10px;
+
+    accent-color: #d88991;
+}
+
+
+.options a {
+
+    color: #eadbd3;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-btn {
+
+    width: 100%;
+
+    height: 31px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #f5eee7;
+
+    color: #4f6250;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.login-btn:hover {
+
+    background: #e8c4bc;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   OR
+========================= */
+
+.or {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 13px 0;
+
+}
+
+
+.or span {
+
+    height: 1px;
+
+    flex: 1;
+
+    background: rgba(238, 217, 208, 0.35);
+}
+
+
+.or p {
+
+    font-size: 7px;
+
+    color: #ded2cc;
+}
+
+
+/* =========================
+   GOOGLE BUTTON
+========================= */
+
+.google-btn {
+
+    width: 100%;
+
+    height: 31px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(239, 207, 199, 0.35);
+
+    background: transparent;
+
+    color: #f0e5df;
+
+    font-size: 8px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    transition: 0.3s;
+}
+
+
+.google-btn:hover {
+
+    background: rgba(235, 195, 187, 0.15);
+}
+
+
+.google-icon {
+
+    font-weight: bold;
+
+    color: #d88d91;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   SIGN UP
+========================= */
+
+.signup {
+
+    text-align: center;
+
+    font-size: 7px;
+
+    color: #d9cec8;
+
+    margin-top: 18px;
+}
+
+
+.signup a {
+
+    color: #f0c0b7;
+
+    text-decoration: none;
+}

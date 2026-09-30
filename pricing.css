@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f8d7e3;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   PRICING PAGE
+========================= */
+
+.pricing-page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 70px 8%;
+
+    /* grid background */
+    background-color: #f8d7e3;
+
+    background-image:
+        linear-gradient(
+            rgba(122, 158, 126, 0.12) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(122, 158, 126, 0.12) 1px,
+            transparent 1px
+        );
+
+    background-size: 40px 40px;
+}
+
+
+
+/* =========================
+   HEADING
+========================= */
+
+.heading {
+
+    margin-bottom: 35px;
+
+    margin-left: 20px;
+}
+
+
+.heading h1 {
+
+    font-size: 30px;
+
+    color: #333;
+
+    font-weight: 700;
+}
+
+
+.heading p {
+
+    font-size: 25px;
+
+    color: #7a9e7e;
+
+    font-weight: 600;
+
+    margin-top: 3px;
+}
+
+
+
+/* =========================
+   PLANS
+========================= */
+
+.plans {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+
+    width: 100%;
+}
+
+
+
+/* =========================
+   GENERAL PLAN
+========================= */
+
+.plan {
+
+    width: 380px;
+
+    min-height: 500px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* =========================
+   PLAN HEADER
+========================= */
+
+.plan-header {
+
+    height: 125px;
+
+    padding: 20px 25px;
+
+    background: #eeeeee;
+}
+
+
+.badge {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: white;
+
+    background: #7a9e7e;
+}
+
+
+.plan-header h2 {
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+    color: #222;
+
+    margin-top: 18px;
+}
+
+
+
+/* =========================
+   PLAN BODY
+========================= */
+
+.plan-body {
+
+    background: white;
+
+    min-height: 375px;
+
+    padding: 25px 30px;
+}
+
+
+.plan-body ul {
+
+    list-style: none;
+}
+
+
+.plan-body li {
+
+    font-size: 14px;
+
+    color: #555;
+
+    margin-bottom: 17px;
+
+    position: relative;
+
+    padding-left: 20px;
+}
+
+
+/* Check marks */
+
+.plan-body li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #7a9e7e;
+
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.plan-body button {
+
+    width: 100%;
+
+    height: 45px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #7a9e7e;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 15px rgba(122, 158, 126, 0.35);
+
+    transition: 0.3s;
+}
+
+
+.plan-body button:hover {
+
+    transform: translateY(-3px);
+
+    background: #668a6b;
+}
+
+
+
+/* =========================
+   GROWTH PLAN
+========================= */
+
+.growth {
+
+    background: #7a9e7e;
+}
+
+
+.growth .plan-header {
+
+    background: #6d9071;
+}
+
+
+.growth .badge {
+
+    background: #f0b4cb;
+}
+
+
+.growth .plan-header h2 {
+
+    color: white;
+}
+
+
+.growth .plan-body {
+
+    background: #7a9e7e;
+}
+
+
+.growth .plan-body li {
+
+    color: white;
+}
+
+
+.growth .plan-body li::before {
+
+    color: #f0b4cb;
+}
+
+
+.growth .plan-body button {
+
+    background: #f0b4cb;
+
+    color: white;
+
+    box-shadow:
+        0 7px 15px rgba(240, 180, 203, 0.4);
+}
+
+
+.growth .plan-body button:hover {
+
+    background: #e5a2bc;
+}
+
+
+
+/* =========================
+   GUARANTEE
+========================= */
+
+.guarantee {
+
+    width: 65%;
+
+    min-height: 55px;
+
+    margin: 35px auto 0;
+
+    padding: 10px 20px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    color: #555;
+
+    font-size: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.check {
+
+    width: 21px;
+
+    height: 21px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f0b4cb;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.guarantee strong {
+
+    color: #333;
+}
+
+
+.guarantee p {
+
+    margin: 0;
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .plans {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .plan {
+
+        width: 90%;
+
+        max-width: 400px;
+    }
+
+    .guarantee {
+
+        width: 90%;
+
+        text-align: center;
+
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .pricing-page {
+
+        padding: 45px 20px;
+    }
+
+
+    .heading {
+
+        margin-left: 5px;
+    }
+
+
+    .heading h1 {
+
+        font-size: 24px;
+    }
+
+
+    .heading p {
+
+        font-size: 20px;
+    }
+
+
+    .plan {
+
+        width: 100%;
+    }
+}
